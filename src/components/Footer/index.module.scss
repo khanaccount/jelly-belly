@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+
+.footer {
+  margin-top: 200px;
+  background-color: $DarkBackgroundColor;
+  color: $headColor;
+  padding: 20px 0;
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .contactInfo,
+  .socialMedia {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p,
+    a {
+      font-size: 18px;
+      margin: 5px 0;
+      color: $headColor;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: $headColor;
+      }
+    }
+  }
+  .socialMedia {
+    a {
+      margin: 5px 0;
+    }
+  }
+  .copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    p {
+      font-size: 16px;
+    }
+  }
+}

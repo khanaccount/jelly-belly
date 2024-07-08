@@ -1,0 +1,64 @@
+@import "../../variables.scss";
+
+.headerBg {
+  background-color: $DarkBackgroundColor;
+  padding: 10px 0;
+
+  @media screen and (max-width: 1417px) {
+    min-height: 600px; // Увеличиваем высоту хедера
+  }
+}
+
+.logo svg {
+  width: 130px;
+  height: 130px;
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 0 20px;
+
+  @media screen and (max-width: 1417px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+    row-gap: 20px;
+  }
+}
+
+.pageLists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+
+  @media screen and (max-width: 1417px) {
+    grid-template-columns: 1fr;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    color: $headColor;
+    border: 0.1rem solid #0000;
+    border-radius: 3rem;
+    text-align: center;
+    padding: 10px 20px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      padding: 10px;
+    }
+
+    &:hover {
+      border: 1px solid $headColor;
+    }
+  }
+}

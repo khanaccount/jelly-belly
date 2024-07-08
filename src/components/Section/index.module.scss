@@ -1,0 +1,21 @@
+@import "../../variables.scss";
+
+.section {
+  margin-top: 50px;
+  h1,
+  span {
+    font-size: 74px;
+    font-weight: 700;
+    margin-bottom: 100px;
+  }
+  span {
+    color: $headColor;
+  }
+
+  p {
+    font-size: 45px;
+  }
+  p:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
